@@ -1,0 +1,20 @@
+             
+            
+
+
+          Trigger name- add_manufacturer	
+               
+
+          Table- manufacturer
+
+          Time- AFTER	
+
+          Event- DELETE	
+
+	
+
+          BEGIN
+
+          DELETE FROM product WHERE manufacturer_id = old.id;
+
+          END

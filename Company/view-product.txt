@@ -1,0 +1,16 @@
+         
+
+
+
+
+
+            
+
+
+
+
+
+          CREATE VIEW view_product AS
+          SELECT p.id,p.name,p.price,m.name manme,m.contact
+          FROM product p, manufacturer m
+          WHERE  m.id=p.manufac_id ;
